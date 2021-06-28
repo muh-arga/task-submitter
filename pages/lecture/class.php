@@ -139,12 +139,12 @@
         <span class="back d-flex justify-content-end">
             <a href="all-tasks.php?id=<?= $classID; ?>">Lihat Semua</a>
         </span>
-        <div class="d-flex justify-content-between flex-wrap mt-3">
+        <div class="d-flex flex-wrap mt-3">
             <?php $i=0 ?>
             <?php foreach($task as $data): ?>
             <a
                 href="task-detail.php?id=<?= $data['id']; ?>&classID=<?= $classID; ?>&subjectID=<?= $data['subjectID']; ?>&subject=<?= $data['subject']; ?>">
-                <div class="mb-3 card-task px-3 py-3" style="background-color: #a7e0eb;">
+                <div class="me-3 mb-3 card-task px-3 py-3" style="background-color: #a7e0eb;">
                     <div class="row">
                         <ul>
                             <li>
