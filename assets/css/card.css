@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.owl-carousel {
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.card-subject,
+.card-class {
+    margin: 20px 0;
+    color: white;
+    position: relative;
+    display: inline-block;
+    border-radius: 17px;
+    height: 160px;
+    width: 380px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    -webkit-transition: box-shadow .6s ease-in;
+    transition: box-shadow .6s ease-out;
+}
+
+.card-task {
+    color: white;
+    position: relative;
+    display: inline-block;
+    border-radius: 17px;
+    box-sizing: border-box;
+    height: 9rem;
+    width: 24rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    -webkit-transition: box-shadow .6s ease-in;
+    transition: box-shadow .6s ease-out;
+}
+
+.card-task:hover {
+    box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.16);
+    -webkit-transition: box-shadow .6s ease-in;
+    transition: box-shadow .6s ease-in;
+}
+
+ul li {
+    text-decoration: none;
+    display: block;
+}
+
+.card-subject h5 {
+    font-size: 23px;
+    display: block;
+}
+
+.card-subject .text li:nth-child(2) {
+    position: absolute;
+    top: 90px;
+}
+
+.card-subject i {
+    font-size: 40px;
+}
+
+.card-task h6 {
+    font-size: 18px;
+    height: 35px;
+}
+
+.card-task .time i {
+    font-size: 25px;
+}
+
+.card-task .time-text span {
+    font-size: 17px;
+}
+
+.card-task .time-text i {
+    font-size: 25px;
+}
+
+.label {
+    padding-left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    height: 25px;
+    border-radius: 0 0 0 24px;
+    width: 60px;
+    background-color: #60cece;
+    top: 0;
+    right: 0;
+}
+
+span a {
+    color: #60cece;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.owl-dot {
+    height: 10px;
+    width: 35px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #60cece!important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #60cece!important;
+}
+
+
+/* Lecture */
+
+.card-class i {
+    font-size: 45px;
+    margin-left: -10px;
+}
+
+a.card-block {
+    text-decoration: none;
+}
+
+
+/* Responsesive Mobile */
+
+@media screen and (max-width: 576px) {
+    .card-subject,
+    .card-class {
+        border-radius: 17px;
+        height: 160px;
+        width: 300px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .card-task {
+        height: 9rem;
+        width: 19rem;
+    }
+    .owl-dots {
+        text-align: center;
+        margin: 5px 0 30px 0;
+    }
+    .owl-carousel {
+        display: flex;
+        justify-content: center;
+    }
+    .card-subject>div {
+        margin-top: 10px;
+    }
+    .card-subject h5 {
+        font-size: 20px;
+        display: block;
+    }
+    .card-subject .text li:nth-child(2) {
+        position: absolute;
+        top: 92px;
+    }
+    .card-subject i {
+        font-size: 35px;
+    }
+    .card-subject li::nth-child(1) i {
+        margin-top: -3px;
+    }
+    .card-subject li::nth-child(2) i {
+        margin-top: 3px;
+    }
+}

@@ -1,0 +1,141 @@
+.task-content i {
+    font-size: 25px;
+    color: #60cece;
+}
+
+.task-content .input-file {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.task-content .input-file .wrapper {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-content .input-file .button span {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.task-content .input-file .button span:nth-child(1) {
+    color: #FFC1B6;
+    margin-right: 10px;
+}
+
+.task-content .input-file .button span:nth-child(2) {
+    color: #F2CF8D;
+    margin-right: 10px;
+}
+
+.task-content .input-file .button span:nth-child(3) {
+    color: #60cece;
+}
+
+.task-content .input-file .wrapper .drag-area {
+    width: 550px;
+    height: 200px;
+    border-radius: 10px;
+    border: dashed 2px #60cece;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-content .input-file .wrapper .drag-area.active {
+    border: solid 2px #60cece;
+}
+
+.task-content .input-file .wrapper .drag-area img {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.task-content .input-file .wrapper .drag-area .file-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #60cece;
+}
+
+.task-content .input-file .wrapper .drag-area .icon i {
+    font-size: 40px;
+    color: #60cece;
+}
+
+.task-content .input-file .wrapper .drag-area header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #60cece;
+}
+
+.task-content .input-file .wrapper .drag-area span {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+    color: #60cece;
+}
+
+.task-content .input-file .wrapper .drag-area button {
+    color: white;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #60cece;
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+.task-create input {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 600px;
+    padding: 0 10px 0 10px;
+}
+
+.task-content .edit {
+    font-size: 25px;
+    color: #F2CF8D;
+    cursor: pointer;
+}
+
+.task-content #show {
+    display: flex;
+}
+
+.file-area {
+    display: none;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 10px;
+}
