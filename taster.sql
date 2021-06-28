@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.62, for Win64 (AMD64)
 --
 -- Host: localhost    Database: taster
 -- ------------------------------------------------------
@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,22 +21,22 @@
 
 DROP TABLE IF EXISTS `file`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `file` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `size` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `type` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `note` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
-  `mahasiswaNRP` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
+  `nama` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `size` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `note` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `mahasiswaNRP` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `tugasID` int NOT NULL,
-  `path` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
+  `path` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `uploaded_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `status` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
+  `status` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `nilai` int DEFAULT NULL,
-  `saran` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci,
+  `saran` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -54,12 +54,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `kelas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `kelas` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
+  `nama` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -78,14 +78,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `mata_kuliah`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `mata_kuliah` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `dosenNIP` varchar(18) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
+  `nama` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `dosenNIP` varchar(18) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `kelasID` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -104,15 +104,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tugas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tugas` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `deskripsi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci,
+  `nama` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `deskripsi` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
   `batas` timestamp NOT NULL,
   `mataKuliahID` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,22 +131,21 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user` (
-  `nrp_nip` varchar(18) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `nama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci NOT NULL,
-  `jenisKelamin` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
-  `agama` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
-  `kota` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
-  `kelasID` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
-  `role` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
-  `foto` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_general_ci DEFAULT NULL,
+  `nrp_nip` varchar(18) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `nama` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `jenisKelamin` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `agama` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `kota` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `kelasID` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `role` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `foto` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`nrp_nip`),
-  UNIQUE KEY `user_un` (`email`),
-  KEY `user_nrp_nip_IDX` (`nrp_nip`,`nama`,`email`,`password`,`kelasID`,`jenisKelamin`,`agama`,`kota`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  UNIQUE KEY `user_un` (`email`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -172,4 +171,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-28 20:16:06
+-- Dump completed on 2021-06-28 20:48:03
