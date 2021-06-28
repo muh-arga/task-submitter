@@ -55,7 +55,8 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>TasTer</title>
 
 </head>
@@ -85,7 +86,7 @@
                                     placeholder="Password" required>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control rounded submit px-3"
+                                <button type="submit" class="btn form-control rounded submit px-3"
                                     name="login">Login</button>
                             </div>
                         </form>
