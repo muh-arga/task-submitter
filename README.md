@@ -1,7 +1,7 @@
 # task-submitter
 TasTer (Task Submitter) merupakan aplikasi berbasis web yang dapat digunakan sebagai media pengumpulan tugas yang diberikan dosen kepada mahasiswa
 
-# Pada TasTer terdapat 3 role
+# Role
 1. Admin:
     - Menambah kelas
     - Menambah Mata Kuliah
@@ -38,7 +38,11 @@ TasTer (Task Submitter) merupakan aplikasi berbasis web yang dapat digunakan seb
     - Email : student@student.com
     - Pass  : student123
 
-# How to use
+# Cara menggunakan
 1. Clone repository
 2. Import taster.sql ke database
-3. setting koneksi di common/connection.php
+3. Setting koneksi di common/connection.php
+4. Jalankan di localhsot
+
+# Atau akses di
+taster.epizy.com
