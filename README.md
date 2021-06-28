@@ -1,7 +1,7 @@
 # task-submitter
 TasTer (Task Submitter) merupakan aplikasi berbasis web yang dapat digunakan sebagai media pengumpulan tugas yang diberikan dosen kepada mahasiswa
 
-# Pada TasTer terdapat 3 role
+# Role
 1. Admin:
     - Menambah kelas
     - Menambah Mata Kuliah
