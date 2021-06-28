@@ -38,7 +38,11 @@ TasTer (Task Submitter) merupakan aplikasi berbasis web yang dapat digunakan seb
     - Email : student@student.com
     - Pass  : student123
 
-# How to use
+# Cara menggunakan
 1. Clone repository
 2. Import taster.sql ke database
-3. setting koneksi di common/connection.php
+3. Setting koneksi di common/connection.php
+4. Jalankan di localhsot
+
+# Atau akses di
+taster.epizy.com
