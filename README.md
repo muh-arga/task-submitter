@@ -45,4 +45,4 @@ TasTer (Task Submitter) merupakan aplikasi berbasis web yang dapat digunakan seb
 4. Jalankan di localhsot
 
 # Atau akses di
-taster.epizy.com
+http://taster.epizy.com
